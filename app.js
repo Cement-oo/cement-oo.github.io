@@ -4,7 +4,7 @@ const siteConfig = {
   eyebrow: "PUBLIC BENEFIT DIRECTORY",
   title: "公益中转分享",
   intro: "好用的站点、注册方式和最新福利，一页看完，点击直达。",
-  githubUrl: "https://github.com/your-github-id",
+  githubUrl: "https://github.com/Cement-oo",
   lastUpdated: "2026-08-11",
   entries: [
     {
