@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="公益中转分享，集中整理注册方式、活动福利与直达链接。"
+    />
+    <title>公益中转分享</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="返回页面顶部">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="route"></i></span>
+        <span data-brand>公益中转分享</span>
+      </a>
+
+      <nav class="site-nav" aria-label="页面导航">
+        <span>精选站点 · 点击直达</span>
+      </nav>
+
+      <a
+        class="icon-link"
+        data-github-link
+        href="https://github.com/your-github-id"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="打开 GitHub 主页"
+        title="GitHub 主页"
+      >
+        <i data-lucide="github"></i>
+      </a>
+    </header>
+
+    <main>
+      <section class="intro-section" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <div class="intro-kicker">
+            <p class="eyebrow" data-eyebrow>PUBLIC BENEFIT DIRECTORY</p>
+            <span class="update-status"><span aria-hidden="true"></span>持续更新中</span>
+          </div>
+          <h1 id="page-title" data-title>公益中转分享</h1>
+          <p class="intro-text" data-intro>
+            好用的站点、注册方式和最新福利，一页看完，点击直达。
+          </p>
+        </div>
+        <div class="directory-summary" aria-label="站点汇总">
+          <strong data-site-count>03</strong>
+          <span>当前收录</span>
+        </div>
+      </section>
+
+      <section class="feed-section" id="feed" aria-labelledby="feed-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">HANDPICKED</p>
+            <h2 id="feed-title">站点推荐</h2>
+          </div>
+          <p class="section-note">整张卡片均可点击</p>
+        </div>
+        <div class="feed-list" id="feed-items" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span data-footer>公益中转分享</span>
+      <span class="footer-meta"><span data-last-updated>更新于 2026.08.11</span></span>
+    </footer>
+
+  </body>
+</html>
