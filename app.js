@@ -10,7 +10,24 @@ const siteConfig = {
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
     {
-      publishedAt: "2026-08-12 00:00",
+      publishedAt: "2026-08-12 12:42",
+      kind: "公益新站",
+      name: "Lzhiyu",
+      summary: "新开公益站，使用推广码注册即送 100 额度，每天签到随机送 50-100 额度。",
+      details:
+        "注册流程简单，可使用 Kimi-K3、GLM-5.2 和 DeepSeek V4-0731。适合先注册领取初始额度，再通过每日签到补充使用额度。",
+      registration: "通过带推广码的邀请链接注册，注册后即可登录使用。",
+      signupBonus: "100 额度",
+      dailyCheckin: "随机 50-100 额度",
+      models: "Kimi-K3 / GLM-5.2 / DeepSeek V4-0731",
+      experience: "注册简单，新站活动待持续观察",
+      caveat: "注册与签到规则可能调整，请以站内说明为准。",
+      benefits: ["注册送 100 额度", "每日随机签到 50-100", "Kimi-K3", "GLM-5.2", "DeepSeek V4-0731"],
+      url: "https://lzhiyu.ccwu.cc/register?ref=REF-8A7434490E",
+      tone: "notice",
+    },
+    {
+      publishedAt: "2026-08-12 10:47",
       kind: "公益新站",
       name: "SirThisWay",
       summary: "新站现可注册，注册满一天后可签到，签到送 1 刀，连续签到奖励更多。",
@@ -27,7 +44,7 @@ const siteConfig = {
       tone: "notice",
     },
     {
-      publishedAt: "2026-08-12 00:00",
+      publishedAt: "2026-08-12 10:47",
       kind: "老站重开",
       name: "Kscsnkli AI",
       summary: "老站现已开放注册，注册送 20,000,000 额度，每日可签到 20,000。",
@@ -44,7 +61,7 @@ const siteConfig = {
       tone: "active",
     },
     {
-      publishedAt: "2026-08-12 00:00",
+      publishedAt: "2026-08-12 10:47",
       kind: "公益新站",
       name: "一梦五千年",
       summary: "可注册的公益新站，注册即送 10 刀，GPT-5.6-sol 与 GPT-5.6-luna 为 1x 倍率。",
