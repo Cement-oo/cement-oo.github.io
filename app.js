@@ -106,7 +106,7 @@ const siteConfig = {
       dailyCheckin: "5-10 刀",
       models: "Claude Opus 4.8 / Opus 5",
       experience: "速度快、稳定",
-      caveat: "限时重新开放，名额可能随时收紧。",
+      caveat: "限时重新开放；注册后请尽快调用，否则有封号风险。",
       benefits: ["注册送 70 刀", "每日签到", "限时重开"],
       url: "https://gorouter.app/sign-up?aff=e9NL",
       tone: "limited",
