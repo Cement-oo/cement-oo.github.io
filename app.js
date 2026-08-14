@@ -93,6 +93,23 @@ const siteConfig = {
       tone: "notice",
     },
     {
+      publishedAt: "2026-08-14 00:22",
+      kind: "半公益",
+      name: "Xingya",
+      summary: "半公益代币站，新站开业；注册即领取试吃 50 芽点，邀请好友注册并加入 QQ 群再送 80 芽点。",
+      details:
+        "采用代币模式，充值比例 1:100，按次计费，约 4 代币/请求，适合酒馆用户。提供小克和 Gemini 新模型，每日签到可领取 20-50 芽点。",
+      registration: "通过邀请链接注册；邀请好友注册并加入 QQ 群后，可再领取 80 芽点。",
+      signupBonus: "试吃 50 芽点",
+      dailyCheckin: "20-50 芽点",
+      models: "小克 / Gemini 新模型",
+      experience: "代币模式，约 4 代币/请求，适合酒馆用户",
+      caveat: "充值比例、代币消耗和新用户福利可能调整，请以站内实际规则为准。",
+      benefits: ["试吃 50 芽点", "邀请注册并入 QQ 群再送 80", "每日签到 20-50", "充值比例 1:100", "约 4 代币/请求", "小克", "Gemini 新模型"],
+      url: "https://xingya.site/sign-up?aff=SV10",
+      tone: "notice",
+    },
+    {
       publishedAt: "2026-08-14 10:40",
       kind: "限时开放",
       name: "ArityFlow",
