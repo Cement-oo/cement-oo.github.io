@@ -196,12 +196,288 @@ const siteConfig = {
   ],
 };
 
-const toneLabels = {
-  active: "推荐",
-  limited: "限时",
-  notice: "新收录",
-  caution: "谨慎",
+const pageCopy = {
+  "zh-CN": {
+    brand: siteConfig.brand,
+    eyebrow: siteConfig.eyebrow,
+    title: siteConfig.title,
+    intro: siteConfig.intro,
+    nav: "精选站点 · 点击直达",
+    updateStatus: "持续更新中",
+    directoryLabel: "站点汇总",
+    siteCountLabel: "当前收录",
+    sectionEyebrow: "HANDPICKED",
+    feedTitle: "站点推荐",
+    sectionNote: "整张卡片均可点击",
+    disclaimer: siteConfig.disclaimer,
+    documentTitle: "公益中转分享 | 站点与福利导航",
+    metaDescription: "公益中转分享，集中整理注册方式、活动福利、模型信息与风险提示。",
+    lastUpdated: "更新于",
+    signupBonus: "注册赠送",
+    dailyCheckin: "每日签到",
+    registration: "注册方式",
+    models: "可用模型",
+    experience: "速度与稳定性",
+    caution: "注意",
+    benefits: "福利",
+    noBenefits: "暂无福利说明",
+    publishedAt: "发布时间",
+    openLink: "打开 {name} 的邀请链接",
+    githubLabel: "打开 GitHub 主页",
+    githubTitle: "GitHub 主页",
+    backToTop: "返回页面顶部",
+    languageLabel: "语言选择",
+  },
+  en: {
+    brand: "Public AI API Directory",
+    eyebrow: "PUBLIC BENEFIT DIRECTORY",
+    title: "Public AI API Directory",
+    intro:
+      "Tested AI API services, registration requirements, current bonuses, and risk notes in one place. I update service status whenever possible.",
+    nav: "Curated services · Direct links",
+    updateStatus: "Actively maintained",
+    directoryLabel: "Service directory",
+    siteCountLabel: "Services listed",
+    sectionEyebrow: "HANDPICKED",
+    feedTitle: "Recommended services",
+    sectionNote: "Click anywhere on a card",
+    disclaimer:
+      "Bonuses, check-in rewards, and model availability are for reference only. Rules may change at any time; verify details on each service before use.",
+    documentTitle: "Public AI API Directory | Services and bonuses",
+    metaDescription:
+      "A maintained directory of AI API services with registration requirements, bonuses, model availability, and risk notes.",
+    lastUpdated: "Updated",
+    signupBonus: "Sign-up bonus",
+    dailyCheckin: "Daily check-in",
+    registration: "Registration",
+    models: "Models",
+    experience: "Experience",
+    caution: "Caution",
+    benefits: "Benefits",
+    noBenefits: "No benefit details",
+    publishedAt: "Published",
+    openLink: "Open the {name} referral link",
+    githubLabel: "Open GitHub profile",
+    githubTitle: "GitHub profile",
+    backToTop: "Back to top",
+    languageLabel: "Language",
+  },
 };
+
+const entryTranslations = {
+  AgentRouter: {
+    kind: "Limited offer",
+    summary:
+      "GPT models are currently 30% cheaper. Claude models are experiencing issues; according to the operator, current usage may be compensated later.",
+    details:
+      "New accounts receive $175 in credit and daily check-ins add $25. Fast and stable. Requires a GitHub account created before December 2025, or a Linux Do account.",
+    registration: "GitHub account created before December 2025, or a Linux Do account.",
+    signupBonus: "$175 credit",
+    dailyCheckin: "$25",
+    experience: "GPT 30% discount; Claude currently affected",
+    caveat:
+      "Compensation is based on the operator's statement; follow later announcements for details. Sign out and back in for check-in credit to take effect.",
+    benefits: ["GPT 30% discount", "Claude compensation planned", "$175 sign-up credit", "$25 daily check-in", "Older account required"],
+  },
+  AnyRouter: {
+    kind: "High bonus and stable",
+    summary:
+      "Referral registration grants $100 and daily check-ins add $25. It offers one of the best experiences here, but demand is high.",
+    details:
+      "Once connected, it is fast, stable, and does not appear degraded. During peak hours you may need to retry several times.",
+    registration: "Linux Do level 2 account, or an .edu.cn academic email address.",
+    signupBonus: "$100 credit",
+    dailyCheckin: "$25",
+    experience: "Fast and stable once connected; no obvious degradation",
+    caveat: "Heavy demand means repeated retries may be needed during peak hours.",
+    benefits: ["$100 sign-up credit", "$25 daily check-in", "No obvious degradation", "Busy during peak hours"],
+  },
+  "Zynk 公益站": {
+    kind: "New public service",
+    name: "Zynk Public Service",
+    summary:
+      "Contact the group admin after registering to receive 200 credits. Daily check-in rewards are random; August 14 and 15 both yielded 15.",
+    details:
+      "This is a new service and currently unstable, so treat it as a backup. Accounts must use more than 100 credits each month or may be deleted.",
+    registration: "Register through the referral link, then contact the group admin for 200 credits.",
+    signupBonus: "200 via group admin",
+    dailyCheckin: "Random; last two were 15",
+    experience: "New and unstable; start with light usage",
+    caveat: "Monthly usage must exceed 100 credits or the account may be deleted. Check-in rewards are random.",
+    benefits: ["200 credits via group admin", "Random daily check-in", "Aug 14 check-in: 15", "Aug 15 check-in: 15"],
+  },
+  TabiToken: {
+    kind: "Temporarily open",
+    summary:
+      "Registration is temporarily open and may close at any time. Referral registration grants $120, with $5-10 from daily check-ins.",
+    details:
+      "Focused on Claude Opus 4.8 and Opus 5, with fast and stable connections. To check in, open the profile photo in the top-right and go to Profile.",
+    registration: "Temporarily open and may close at any time; try registering soon.",
+    signupBonus: "$120 credit",
+    dailyCheckin: "$5-10",
+    models: "Claude Opus 4.8 / Opus 5",
+    experience: "Fast and stable",
+    caveat: "The registration window may close at any time. Check-in is under profile photo → Profile.",
+    benefits: ["Temporarily open", "$120 sign-up credit", "$5-10 daily check-in", "Check in from Profile"],
+  },
+  GoRouter: {
+    kind: "Temporarily open",
+    summary:
+      "Registration is temporarily open and may close at any time. Referral registration grants $70, with $5-10 from daily check-ins.",
+    details:
+      "Focused on Claude Opus 4.8 and Opus 5, with good speed and stability. To check in, open the profile photo in the top-right and go to Profile.",
+    registration: "Temporarily open and may close at any time; try registering soon.",
+    signupBonus: "$70 credit",
+    dailyCheckin: "$5-10",
+    models: "Claude Opus 4.8 / Opus 5",
+    experience: "Fast and stable",
+    caveat: "The registration window may close at any time. Make an API request soon after registration or the account may be suspended.",
+    benefits: ["Temporarily open", "$70 sign-up credit", "$5-10 daily check-in", "Check in from Profile", "Use soon after registration"],
+  },
+  Lzhiyu: {
+    kind: "New public service",
+    summary:
+      "Register with the referral code to receive 100 credits. Daily check-ins award a random 50-100 credits.",
+    details:
+      "Registration is straightforward. Available models include Kimi-K3, GLM-5.2, and DeepSeek V4-0731. Daily check-ins can replenish the starting credit.",
+    registration: "Register through the referral link and use the service after signing in.",
+    signupBonus: "100 credits",
+    dailyCheckin: "Random 50-100 credits",
+    models: "Kimi-K3 / GLM-5.2 / DeepSeek V4-0731",
+    experience: "Simple registration; new-service reliability is still being observed",
+    caveat: "Registration and check-in rules may change. Refer to the service's current notices.",
+    benefits: ["100 sign-up credits", "Random 50-100 daily check-in", "Kimi-K3", "GLM-5.2", "DeepSeek V4-0731"],
+  },
+  Xingya: {
+    kind: "Freemium service",
+    summary:
+      "A new token-based service. New users receive a 50 Sprout-point trial; invite a friend who joins the QQ group for another 80 points.",
+    details:
+      "Top-ups use a 1:100 ratio and requests cost about 4 tokens each, making it suitable for SillyTavern users. Offers Claude and newer Gemini models, plus 20-50 points from daily check-ins.",
+    registration: "Register through the referral link. Invite a friend who joins the QQ group to receive another 80 points.",
+    signupBonus: "50-point trial",
+    dailyCheckin: "20-50 Sprout points",
+    models: "Claude / newer Gemini models",
+    experience: "About 4 tokens per request; suited to SillyTavern",
+    caveat: "Top-up ratios, token costs, and new-user rewards may change. Check the current rules before paying.",
+    benefits: ["50-point trial", "80 more after referral and QQ group join", "20-50 daily check-in", "1:100 top-up ratio", "About 4 tokens/request", "Claude", "Newer Gemini models"],
+  },
+  ArityFlow: {
+    kind: "Limited reopening",
+    summary:
+      "An established service has temporarily reopened. QQ registration is supported, and referral codes grant credit; the exact amount is unconfirmed.",
+    details:
+      "Primarily aimed at SillyTavern users with per-request billing. Daily check-ins can reach 50, with Claude and free models available. Programming outside the coding group is strictly monitored and may lead to suspension.",
+    registration: "Register with QQ and use the referral code to receive the available sign-up credit.",
+    signupBonus: "Available; amount unconfirmed",
+    dailyCheckin: "Up to 50",
+    models: "Claude / free models",
+    experience: "Per-request billing, mainly for SillyTavern users",
+    caveat: "Programming outside the coding group is strictly monitored and may lead to account suspension.",
+    benefits: ["Limited reopening", "QQ registration", "Referral bonus", "Daily check-in up to 50", "Per-request billing", "Claude", "Free models"],
+  },
+  "Kscsnkli AI": {
+    kind: "Reopened service",
+    summary:
+      "The service has reopened with a focus on Chinese models. New accounts receive 20,000,000 credits and daily check-ins add 20,000.",
+    details:
+      "Chinese models will be the main offering, while GPT, Claude, and DeepSeek are moving to limited availability. Use the Playground to check model status before making requests.",
+    registration: "Register through the referral link.",
+    signupBonus: "20,000,000",
+    dailyCheckin: "20,000",
+    models: "Chinese models / GPT / Claude / DeepSeek",
+    experience: "Chinese models are prioritized; some other models are limited",
+    caveat: "GPT, Claude, and DeepSeek have limited availability. Check each model in the Playground before use.",
+    benefits: ["20,000,000 sign-up credits", "20,000 daily check-in", "Chinese-model focus", "Playground status checks", "Some models limited"],
+  },
+  SeekAI: {
+    kind: "Use with caution",
+    summary:
+      "Generous credits: $200 on registration and $20 from daily check-ins. Model coverage is broad, but it may use a web-proxy backend and tool calls can fail.",
+    details:
+      "Chinese models, GPT, and Claude are available, but reliability and output quality fluctuate and may be degraded. Better suited to basic chat or backup use.",
+    registration: "Register with a GitHub account; new accounts are accepted.",
+    signupBonus: "$200 credit",
+    dailyCheckin: "$20",
+    models: "Chinese models / GPT / Claude",
+    experience: "Possible web proxy; tool-calling issues",
+    caveat: "Tool calls may fail, and stability and output quality can fluctuate. Use as a backup only.",
+    benefits: ["$200 sign-up credit", "$20 daily check-in", "Broad model coverage", "Possible web proxy", "Tool-calling issues"],
+  },
+  "一梦五千年": {
+    kind: "Registration paused",
+    name: "Yimeng 5000",
+    summary:
+      "Registration is currently closed and this page will be updated if it reopens. The previous sign-up bonus was $10, with GPT-5.6-sol and GPT-5.6-luna at a 1x rate.",
+    details:
+      "QQ and 163 email registration were previously supported, along with additional Chinese models. The registration limit has been reached, so there is no need to retry for now.",
+    registration: "Registration is paused; wait for reopening.",
+    signupBonus: "$10",
+    dailyCheckin: "Random reward",
+    models: "GPT-5.6-sol / GPT-5.6-luna / Chinese models",
+    experience: "Registration closed",
+    caveat: "Registration is closed. Do not bulk-probe availability, as your IP may be blocked.",
+    benefits: ["Previous $10 sign-up credit", "Registration paused", "1x rate", "Random check-in reward"],
+  },
+};
+
+const toneLabels = {
+  "zh-CN": {
+    active: "推荐",
+    limited: "限时",
+    notice: "新收录",
+    caution: "谨慎",
+  },
+  en: {
+    active: "Recommended",
+    limited: "Limited",
+    notice: "New",
+    caution: "Caution",
+  },
+};
+
+const defaultLocale = "zh-CN";
+const supportedLocales = new Set([defaultLocale, "en"]);
+let currentLocale = defaultLocale;
+
+const getStoredLocale = () => {
+  try {
+    const storedLocale = window.localStorage.getItem("directory-language");
+    return supportedLocales.has(storedLocale) ? storedLocale : null;
+  } catch {
+    return null;
+  }
+};
+
+const storeLocale = (locale) => {
+  try {
+    window.localStorage.setItem("directory-language", locale);
+  } catch {
+    // Language switching still works when browser storage is unavailable.
+  }
+};
+
+const resolveLocale = () => {
+  const requestedLocale = new URLSearchParams(window.location.search).get("lang");
+  if (requestedLocale === "en") return "en";
+  if (requestedLocale === "zh" || requestedLocale === defaultLocale) return defaultLocale;
+  return getStoredLocale() || defaultLocale;
+};
+
+const updateLocaleInUrl = (locale) => {
+  const url = new URL(window.location.href);
+  if (locale === defaultLocale) {
+    url.searchParams.delete("lang");
+  } else {
+    url.searchParams.set("lang", locale);
+  }
+  window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+};
+
+const localizeEntry = (entry) =>
+  currentLocale === "en" && entryTranslations[entry.name]
+    ? { ...entry, ...entryTranslations[entry.name] }
+    : entry;
 
 const escapeHtml = (value) =>
   String(value).replace(/[&<>'"]/g, (character) => {
@@ -223,13 +499,14 @@ const parsePublishedAt = (publishedAt) => new Date(String(publishedAt).replace("
 const formatPublishedAt = (publishedAt) => {
   const parsed = parsePublishedAt(publishedAt);
   if (Number.isNaN(parsed.getTime())) return { date: publishedAt, time: "" };
+  const dateLocale = currentLocale === "en" ? "en-US" : "zh-CN";
   return {
-    date: new Intl.DateTimeFormat("zh-CN", {
+    date: new Intl.DateTimeFormat(dateLocale, {
       year: "numeric",
       month: "2-digit",
       day: "2-digit",
     }).format(parsed),
-    time: new Intl.DateTimeFormat("zh-CN", {
+    time: new Intl.DateTimeFormat(dateLocale, {
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
@@ -250,7 +527,7 @@ const getBenefits = (entry) =>
 const infoRow = (icon, label, value) =>
   value
     ? `<div class="entry-info-row">
-              <span class="entry-info-label"><i data-lucide="${icon}" aria-hidden="true"></i>${label}</span>
+              <span class="entry-info-label"><i data-lucide="${icon}" aria-hidden="true"></i>${escapeHtml(label)}</span>
               <p class="registration-text">${escapeHtml(value)}</p>
             </div>`
     : "";
@@ -263,42 +540,47 @@ const quotaCell = (label, value) =>
             </div>`
     : "";
 
-const renderEntry = (entry) => {
-  const tone = toneLabels[entry.tone] ? entry.tone : "active";
+const renderEntry = (sourceEntry) => {
+  const copy = pageCopy[currentLocale];
+  const entry = localizeEntry(sourceEntry);
+  const localizedTones = toneLabels[currentLocale];
+  const tone = localizedTones[entry.tone] ? entry.tone : "active";
   const href = safeHttpUrl(entry.url);
   const safeName = escapeHtml(entry.name);
+  const safeAnalyticsName = escapeHtml(sourceEntry.name);
   const datetime = escapeHtml(String(entry.publishedAt).replace(" ", "T"));
   const publishedAt = formatPublishedAt(entry.publishedAt);
   const benefits = getBenefits(entry);
   const benefitTags = benefits.length
     ? benefits.map((benefit) => `<li>${escapeHtml(benefit)}</li>`).join("")
-    : "<li>暂无福利说明</li>";
+    : `<li>${escapeHtml(copy.noBenefits)}</li>`;
+  const openLinkLabel = escapeHtml(copy.openLink.replace("{name}", entry.name));
 
   return `
     <article class="feed-item" data-tone="${tone}">
       <div class="feed-meta">
-        <time datetime="${datetime}" aria-label="发布时间 ${escapeHtml(entry.publishedAt)}">
+        <time datetime="${datetime}" aria-label="${escapeHtml(copy.publishedAt)} ${escapeHtml(entry.publishedAt)}">
           <span>${escapeHtml(publishedAt.date)}</span>
           <span>${escapeHtml(publishedAt.time)}</span>
         </time>
       </div>
-      <a class="feed-card" href="${escapeHtml(href)}" target="_blank" rel="noreferrer" aria-label="打开 ${safeName} 的邀请链接" data-umami-event="打开 ${safeName}">
+      <a class="feed-card" href="${escapeHtml(href)}" target="_blank" rel="noreferrer" aria-label="${openLinkLabel}" data-umami-event="打开 ${safeAnalyticsName}">
         <div class="entry-content">
-          <p class="entry-kind">${escapeHtml(entry.kind)} / ${toneLabels[tone]}</p>
+          <p class="entry-kind">${escapeHtml(entry.kind)} / ${escapeHtml(localizedTones[tone])}</p>
           <h3>${safeName}</h3>
           <p class="entry-description">${escapeHtml(entry.summary)}</p>
           <p class="entry-details">${escapeHtml(entry.details)}</p>
           <div class="entry-quota">
-            ${quotaCell("注册赠送", entry.signupBonus)}
-            ${quotaCell("每日签到", entry.dailyCheckin)}
+            ${quotaCell(copy.signupBonus, entry.signupBonus)}
+            ${quotaCell(copy.dailyCheckin, entry.dailyCheckin)}
           </div>
           <div class="entry-info">
-            ${infoRow("user-round-plus", "注册方式", entry.registration)}
-            ${infoRow("sparkles", "可用模型", entry.models)}
-            ${infoRow("gauge", "速度与稳定性", entry.experience)}
-            ${infoRow("triangle-alert", "注意", entry.caveat)}
+            ${infoRow("user-round-plus", copy.registration, entry.registration)}
+            ${infoRow("sparkles", copy.models, entry.models)}
+            ${infoRow("gauge", copy.experience, entry.experience)}
+            ${infoRow("triangle-alert", copy.caution, entry.caveat)}
             <div class="entry-info-row">
-              <span class="entry-info-label"><i data-lucide="gift" aria-hidden="true"></i>福利</span>
+              <span class="entry-info-label"><i data-lucide="gift" aria-hidden="true"></i>${escapeHtml(copy.benefits)}</span>
               <ul class="benefit-tags">${benefitTags}</ul>
             </div>
           </div>
@@ -309,19 +591,66 @@ const renderEntry = (entry) => {
   `;
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.title = `${siteConfig.brand} | 站点与福利导航`;
-  applyText("[data-brand]", siteConfig.brand);
-  applyText("[data-eyebrow]", siteConfig.eyebrow);
-  applyText("[data-title]", siteConfig.title);
-  applyText("[data-intro]", siteConfig.intro);
-  applyText("[data-footer]", siteConfig.brand);
-  applyText("[data-site-count]", String(siteConfig.entries.length).padStart(2, "0"));
-  applyText("[data-last-updated]", `更新于 ${siteConfig.lastUpdated.replaceAll("-", ".")}`);
-  applyText("[data-disclaimer]", siteConfig.disclaimer);
+const renderPage = () => {
+  const copy = pageCopy[currentLocale];
+  const githubLink = document.querySelector("[data-github-link]");
+  const brandLink = document.querySelector("[data-brand-link]");
+  const languageSwitcher = document.querySelector("[data-language-switcher]");
+  const directorySummary = document.querySelector("[data-directory-summary]");
+  const metaDescription = document.querySelector('meta[name="description"]');
 
-  document.querySelector("[data-github-link]").href = safeHttpUrl(siteConfig.githubUrl);
+  document.documentElement.lang = currentLocale;
+  document.title = copy.documentTitle;
+  metaDescription?.setAttribute("content", copy.metaDescription);
+  applyText("[data-brand]", copy.brand);
+  applyText("[data-eyebrow]", copy.eyebrow);
+  applyText("[data-title]", copy.title);
+  applyText("[data-intro]", copy.intro);
+  applyText("[data-nav-copy]", copy.nav);
+  applyText("[data-update-status]", copy.updateStatus);
+  applyText("[data-site-count-label]", copy.siteCountLabel);
+  applyText("[data-section-eyebrow]", copy.sectionEyebrow);
+  applyText("[data-feed-title]", copy.feedTitle);
+  applyText("[data-section-note]", copy.sectionNote);
+  applyText("[data-footer]", copy.brand);
+  applyText("[data-site-count]", String(siteConfig.entries.length).padStart(2, "0"));
+  applyText("[data-last-updated]", `${copy.lastUpdated} ${siteConfig.lastUpdated.replaceAll("-", ".")}`);
+  applyText("[data-disclaimer]", copy.disclaimer);
+
+  brandLink?.setAttribute("aria-label", copy.backToTop);
+  languageSwitcher?.setAttribute("aria-label", copy.languageLabel);
+  directorySummary?.setAttribute("aria-label", copy.directoryLabel);
+  document.querySelector(".site-nav")?.setAttribute("aria-label", copy.nav);
+
+  if (githubLink) {
+    githubLink.href = safeHttpUrl(siteConfig.githubUrl);
+    githubLink.setAttribute("aria-label", copy.githubLabel);
+    githubLink.setAttribute("title", copy.githubTitle);
+  }
+
+  document.querySelectorAll("[data-lang-option]").forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.langOption === currentLocale));
+  });
+
   document.querySelector("#feed-items").innerHTML = siteConfig.entries.map(renderEntry).join("");
 
   window.lucide?.createIcons();
+};
+
+const setLocale = (locale, { updateUrl = true } = {}) => {
+  if (!supportedLocales.has(locale)) return;
+  currentLocale = locale;
+  storeLocale(locale);
+  if (updateUrl) updateLocaleInUrl(locale);
+  renderPage();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  currentLocale = resolveLocale();
+
+  document.querySelectorAll("[data-lang-option]").forEach((button) => {
+    button.addEventListener("click", () => setLocale(button.dataset.langOption));
+  });
+
+  renderPage();
 });

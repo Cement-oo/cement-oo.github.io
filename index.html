@@ -9,7 +9,7 @@
     />
     <title>公益中转分享</title>
     <link rel="preconnect" href="https://unpkg.com" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260815-i18n2" />
     <script src="https://unpkg.com/lucide@latest" defer></script>
     <script
       defer
@@ -17,32 +17,38 @@
       data-website-id="2b930e98-7868-43b1-b2bf-7cb9c5f36d60"
       data-domains="ytzzjx.github.io"
     ></script>
-    <script src="app.js?v=20260815-umami" defer></script>
+    <script src="app.js?v=20260815-i18n" defer></script>
   </head>
   <body>
     <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="返回页面顶部">
+      <a class="brand" href="#top" aria-label="返回页面顶部" data-brand-link>
         <span class="brand-mark" aria-hidden="true"><i data-lucide="route"></i></span>
         <span data-brand>公益中转分享</span>
       </a>
 
       <nav class="site-nav" aria-label="页面导航">
-        <span>精选站点 · 点击直达</span>
+        <span data-nav-copy>精选站点 · 点击直达</span>
       </nav>
 
-      <a
-        class="icon-link"
-        data-github-link
-        href="https://github.com/ytzzjx"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="打开 GitHub 主页"
-        title="GitHub 主页"
-      >
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 22.29 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z" />
-        </svg>
-      </a>
+      <div class="header-actions">
+        <div class="language-switcher" role="group" aria-label="语言选择" data-language-switcher>
+          <button type="button" class="language-option" data-lang-option="zh-CN" aria-pressed="true">中文</button>
+          <button type="button" class="language-option" data-lang-option="en" aria-pressed="false">EN</button>
+        </div>
+        <a
+          class="icon-link"
+          data-github-link
+          href="https://github.com/ytzzjx"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="打开 GitHub 主页"
+          title="GitHub 主页"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 22.29 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z" />
+          </svg>
+        </a>
+      </div>
     </header>
 
     <main>
@@ -50,26 +56,26 @@
         <div class="intro-copy">
           <div class="intro-kicker">
             <p class="eyebrow" data-eyebrow>PUBLIC BENEFIT DIRECTORY</p>
-            <span class="update-status"><span aria-hidden="true"></span>持续更新中</span>
+            <span class="update-status"><span class="update-dot" aria-hidden="true"></span><span data-update-status>持续更新中</span></span>
           </div>
           <h1 id="page-title" data-title>公益中转分享</h1>
           <p class="intro-text" data-intro>
             好用的站点、注册方式和最新福利，一页看完，点击直达。
           </p>
         </div>
-        <div class="directory-summary" aria-label="站点汇总">
+        <div class="directory-summary" aria-label="站点汇总" data-directory-summary>
           <strong data-site-count>03</strong>
-          <span>当前收录</span>
+          <span data-site-count-label>当前收录</span>
         </div>
       </section>
 
       <section class="feed-section" id="feed" aria-labelledby="feed-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">HANDPICKED</p>
-            <h2 id="feed-title">站点推荐</h2>
+            <p class="eyebrow" data-section-eyebrow>HANDPICKED</p>
+            <h2 id="feed-title" data-feed-title>站点推荐</h2>
           </div>
-          <p class="section-note">整张卡片均可点击</p>
+          <p class="section-note" data-section-note>整张卡片均可点击</p>
         </div>
         <div class="feed-list" id="feed-items" aria-live="polite"></div>
       </section>
