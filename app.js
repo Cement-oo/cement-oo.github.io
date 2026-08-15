@@ -5,7 +5,7 @@ const siteConfig = {
   title: "公益中转分享",
   intro: "好用的站点、注册方式和最新福利，一页看完，点击直达。我会尽量更新最新情况，欢迎多多关注。",
   githubUrl: "https://github.com/ytzzjx",
-  lastUpdated: "2026-08-14",
+  lastUpdated: "2026-08-15",
   disclaimer:
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
@@ -107,6 +107,22 @@ const siteConfig = {
       caveat: "充值比例、代币消耗和新用户福利可能调整，请以站内实际规则为准。",
       benefits: ["试吃 50 芽点", "邀请注册并入 QQ 群再送 80", "每日签到 20-50", "充值比例 1:100", "约 4 代币/请求", "小克", "Gemini 新模型"],
       url: "https://xingya.site/sign-up?aff=SV10",
+      tone: "notice",
+    },
+    {
+      publishedAt: "2026-08-15 10:38",
+      kind: "公益新站",
+      name: "Zynk 公益站",
+      summary: "注册后联系群主可领取 200 额度；支持每日签到，签到金额随机，8 月 14 日和 8 月 15 日实测均为 15。",
+      details:
+        "新站目前暂不稳定，适合作为备用。账号每个月必须使用超过 100 额度，未达到使用要求可能会被删除。",
+      registration: "通过邀请链接注册，进入后联系群主领取 200 额度。",
+      signupBonus: "联系群主送 200",
+      dailyCheckin: "随机；最近两次均为 15",
+      experience: "新站暂不稳定，建议先小量使用",
+      caveat: "每个月必须使用超过 100 额度，否则可能删号；签到金额为随机值。",
+      benefits: ["联系群主送 200", "每日随机签到", "8 月 14 日签到 15", "8 月 15 日签到 15"],
+      url: "https://gy.leyanshi.me/sign-up?aff=lorI",
       tone: "notice",
     },
     {
