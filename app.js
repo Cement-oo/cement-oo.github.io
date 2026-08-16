@@ -10,18 +10,34 @@ const siteConfig = {
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
     {
+      publishedAt: "2026-08-16 22:41",
+      kind: "国内入口",
+      name: "AgentRouter 国内入口",
+      summary: "AgentRouter 国内注册地址；模型已全部恢复正常，注册送 175 刀、每日签到 25 刀。",
+      details:
+        "注册要求与 AgentRouter 原入口一致：GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.8 折”的 Core 分组；具体奖励和获取机制尚未确认。",
+      registration: "国内注册地址；GitHub 老号（2025 年 12 月之前注册）或 Linux Do 账号。",
+      signupBonus: "175 刀",
+      dailyCheckin: "25 刀",
+      experience: "模型已恢复正常，速度快且稳定",
+      caveat: "正常使用可能有消耗额度补充或 Core 分组（标注 0.8 折）奖励，但具体机制尚未确认；签到需退出账号后重新登录才会生效。",
+      benefits: ["国内注册地址", "模型已恢复正常", "正常使用可能有额外奖励", "Core 分组（0.8 折）机制待确认", "注册送 175 刀", "每日签到 25 刀", "老号门槛"],
+      url: "https://ps.air-outer.com/register?aff=i3Xz",
+      tone: "active",
+    },
+    {
       publishedAt: "2026-08-16 17:11",
-      kind: "近期优惠",
+      kind: "模型已恢复",
       name: "AgentRouter",
-      summary: "GPT 系列现降价 30%，模型已全部恢复正常；站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.8 折”的 Core 分组，具体奖励和获取机制尚未确认。",
+      summary: "模型已全部恢复正常；站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.8 折”的 Core 分组，具体奖励和获取机制尚未确认。",
       details:
         "注册送 175 刀、每日签到 25 刀，速度快且稳定。GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长表示正常使用可能获得消耗额度补充或 Core 分组（标注 0.8 折）奖励，具体获取和发放规则尚未确认。",
       registration: "GitHub 老号（2025 年 12 月之前注册）或 Linux Do 账号。",
       signupBonus: "175 刀",
       dailyCheckin: "25 刀",
-      experience: "GPT 降价 30%，模型已恢复正常，速度快且稳定",
+      experience: "模型已恢复正常，速度快且稳定",
       caveat: "正常使用可能有消耗额度补充或 Core 分组（标注 0.8 折）奖励，但具体机制尚未确认；签到需退出账号后重新登录才会生效。",
-      benefits: ["GPT 降价 30%", "模型已恢复正常", "正常使用可能有额外奖励", "Core 分组（0.8 折）机制待确认", "注册送 175 刀", "每日签到 25 刀", "老号门槛"],
+      benefits: ["模型已恢复正常", "正常使用可能有额外奖励", "Core 分组（0.8 折）机制待确认", "注册送 175 刀", "每日签到 25 刀", "老号门槛"],
       url: "https://agentrouter.org/register?aff=i3Xz",
       tone: "active",
     },
@@ -29,15 +45,16 @@ const siteConfig = {
       publishedAt: "2026-08-13 22:12",
       kind: "高额稳定",
       name: "AnyRouter",
-      summary: "邀请注册送 100，每天签到 25，体验是几家里最好的，代价是人多得挤。",
+      summary: "邀请注册送 100，每天签到 25，支持 Claude Fabel5；体验是几家里最好的，代价是人多得挤。",
       details:
-        "只要能连上，速度快、稳定，也没有降智问题。缺点是用的人多，高峰期得多试几次才能挤进去。",
+        "可使用 Claude Fabel5；只要能连上，速度快、稳定，也没有降智问题。缺点是用的人多，高峰期得多试几次才能挤进去。",
       registration: "Linux Do 二级账号，或 .edu.cn 教育邮箱注册。",
       signupBonus: "100 刀",
       dailyCheckin: "25 刀",
+      models: "Claude Fabel5",
       experience: "挤进去后速度快、稳定，无降智",
       caveat: "人多，高峰期需要反复重试才能挤进去。",
-      benefits: ["注册送 100 刀", "每日签到 25 刀", "无降智", "人多需排队"],
+      benefits: ["注册送 100 刀", "每日签到 25 刀", "Claude Fabel5", "无降智", "人多需排队"],
       url: "https://anyrouter.top/register?aff=LJPP",
       tone: "active",
     },
@@ -265,32 +282,48 @@ const pageCopy = {
 };
 
 const entryTranslations = {
-  AgentRouter: {
-    kind: "Current offer",
+  "AgentRouter 国内入口": {
+    kind: "Mainland China access",
+    name: "AgentRouter China access",
     summary:
-      "GPT models are 30% cheaper and all models have returned to normal. The operator encourages normal use, which may occasionally bring credit top-ups or access to a Core group advertised with a 0.8 rate; eligibility and the reward mechanism are unconfirmed.",
+      "A mainland China registration link for AgentRouter. All models have returned to normal, new accounts receive $175, and daily check-ins add $25.",
+    details:
+      "Registration requirements match the original AgentRouter link: a GitHub account created before December 2025, or a Linux Do account. Normal use may bring consumed-credit top-ups or access to a Core group advertised with a 0.8 rate, but the exact rules are unconfirmed.",
+    registration: "Mainland China registration link; GitHub account created before December 2025, or a Linux Do account.",
+    signupBonus: "$175 credit",
+    dailyCheckin: "$25",
+    experience: "Models restored and currently stable",
+    caveat:
+      "Normal use may qualify for consumed-credit top-ups or access to a Core group advertised with a 0.8 rate, but the mechanism is unconfirmed. Sign out and back in for check-in credit to take effect.",
+    benefits: ["Mainland China registration", "Models restored", "Possible usage rewards", "Core 0.8-rate mechanism unconfirmed", "$175 sign-up credit", "$25 daily check-in", "Older account required"],
+  },
+  AgentRouter: {
+    kind: "Models restored",
+    summary:
+      "All models have returned to normal. The operator encourages normal use, which may occasionally bring credit top-ups or access to a Core group advertised with a 0.8 rate; eligibility and the reward mechanism are unconfirmed.",
     details:
       "New accounts receive $175 in credit and daily check-ins add $25. Fast and stable. Requires a GitHub account created before December 2025, or a Linux Do account. Normal use may bring consumed-credit top-ups or access to the Core group advertised with a 0.8 rate, but the exact rules are unconfirmed.",
     registration: "GitHub account created before December 2025, or a Linux Do account.",
     signupBonus: "$175 credit",
     dailyCheckin: "$25",
-    experience: "GPT 30% discount; models restored and currently stable",
+    experience: "Models restored and currently stable",
     caveat:
       "Normal use may qualify for consumed-credit top-ups or access to a Core group advertised with a 0.8 rate, but the mechanism is unconfirmed. Sign out and back in for check-in credit to take effect.",
-    benefits: ["GPT 30% discount", "Models restored", "Possible usage rewards", "Core 0.8-rate mechanism unconfirmed", "$175 sign-up credit", "$25 daily check-in", "Older account required"],
+    benefits: ["Models restored", "Possible usage rewards", "Core 0.8-rate mechanism unconfirmed", "$175 sign-up credit", "$25 daily check-in", "Older account required"],
   },
   AnyRouter: {
     kind: "High bonus and stable",
     summary:
-      "Referral registration grants $100 and daily check-ins add $25. It offers one of the best experiences here, but demand is high.",
+      "Referral registration grants $100 and daily check-ins add $25. Claude Fabel5 is available. It offers one of the best experiences here, but demand is high.",
     details:
-      "Once connected, it is fast, stable, and does not appear degraded. During peak hours you may need to retry several times.",
+      "Claude Fabel5 is available. Once connected, it is fast, stable, and does not appear degraded. During peak hours you may need to retry several times.",
     registration: "Linux Do level 2 account, or an .edu.cn academic email address.",
     signupBonus: "$100 credit",
     dailyCheckin: "$25",
+    models: "Claude Fabel5",
     experience: "Fast and stable once connected; no obvious degradation",
     caveat: "Heavy demand means repeated retries may be needed during peak hours.",
-    benefits: ["$100 sign-up credit", "$25 daily check-in", "No obvious degradation", "Busy during peak hours"],
+    benefits: ["$100 sign-up credit", "$25 daily check-in", "Claude Fabel5", "No obvious degradation", "Busy during peak hours"],
   },
   "Zynk 公益站": {
     kind: "New public service",
