@@ -5,23 +5,23 @@ const siteConfig = {
   title: "公益中转分享",
   intro: "好用的站点、注册方式和最新福利，一页看完，点击直达。我会尽量更新最新情况，欢迎多多关注。",
   githubUrl: "https://github.com/ytzzjx",
-  lastUpdated: "2026-08-15",
+  lastUpdated: "2026-08-16",
   disclaimer:
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
     {
-      publishedAt: "2026-08-13 22:12",
+      publishedAt: "2026-08-16 17:11",
       kind: "近期优惠",
       name: "AgentRouter",
-      summary: "GPT 系列现降价 30%；Claude 系列目前出现问题，据站长说明，现阶段可以多用，之后会给予补偿。",
+      summary: "GPT 系列现降价 30%，模型已全部恢复正常；站长鼓励正常使用，有时会补充消耗额度，也可能给予标注“0.8 折”的 Core 分组，具体奖励和获取机制尚未确认。",
       details:
-        "注册送 175 刀、每日签到 25 刀，速度快且稳定。GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。",
+        "注册送 175 刀、每日签到 25 刀，速度快且稳定。GitHub 需要是 2025 年 12 月之前注册的老号，没有的话可以使用 Linux Do 账号。站长表示正常使用可能获得消耗额度补充或 Core 分组（标注 0.8 折）奖励，具体获取和发放规则尚未确认。",
       registration: "GitHub 老号（2025 年 12 月之前注册）或 Linux Do 账号。",
       signupBonus: "175 刀",
       dailyCheckin: "25 刀",
-      experience: "GPT 降价 30%，Claude 系列当前异常",
-      caveat: "Claude 系列补偿为站长说明，具体方案以站内后续公告为准；签到需退出账号后重新登录才会生效。",
-      benefits: ["GPT 降价 30%", "Claude 后续补偿", "注册送 175 刀", "每日签到 25 刀", "老号门槛"],
+      experience: "GPT 降价 30%，模型已恢复正常，速度快且稳定",
+      caveat: "正常使用可能有消耗额度补充或 Core 分组（标注 0.8 折）奖励，但具体机制尚未确认；签到需退出账号后重新登录才会生效。",
+      benefits: ["GPT 降价 30%", "模型已恢复正常", "正常使用可能有额外奖励", "Core 分组（0.8 折）机制待确认", "注册送 175 刀", "每日签到 25 刀", "老号门槛"],
       url: "https://agentrouter.org/register?aff=i3Xz",
       tone: "active",
     },
@@ -163,16 +163,16 @@ const siteConfig = {
       publishedAt: "2026-08-13 22:12",
       kind: "谨慎使用",
       name: "SeekAI",
-      summary: "额度给得大方，注册送 200、每天签到 20，模型覆盖较全；疑似网页反代，工具调用有些问题。",
+      summary: "额度给得大方，注册送 200、每天签到 20；目前仅支持 DeepSeek，疑似网页反代，工具调用有些问题。",
       details:
-        "国产模型、GPT、Claude 都能用，但实际体验不太稳定，也存在降智。疑似采用网页反代，工具调用可能无法正常工作，更适合普通对话或备用。",
+        "目前仅能使用 DeepSeek，实际体验不太稳定，也存在降智。疑似采用网页反代，工具调用可能无法正常工作，更适合普通对话或备用。",
       registration: "GitHub 账号注册，新号即可。",
       signupBonus: "200 刀",
       dailyCheckin: "20 刀",
-      models: "国产模型 / GPT / Claude",
-      experience: "疑似网页反代，工具调用有问题",
-      caveat: "工具调用可能异常，稳定性和输出质量也有波动，建议仅作备用。",
-      benefits: ["注册送 200 刀", "每日签到 20 刀", "模型全", "疑似网页反代", "工具调用异常"],
+      models: "DeepSeek",
+      experience: "目前仅支持 DeepSeek；疑似网页反代，工具调用有问题",
+      caveat: "目前仅支持 DeepSeek；工具调用可能异常，稳定性和输出质量也有波动，建议仅作备用。",
+      benefits: ["注册送 200 刀", "每日签到 20 刀", "仅支持 DeepSeek", "疑似网页反代", "工具调用异常"],
       url: "https://seekai.cc/sign-up?aff=NzMk",
       tone: "caution",
     },
@@ -266,18 +266,18 @@ const pageCopy = {
 
 const entryTranslations = {
   AgentRouter: {
-    kind: "Limited offer",
+    kind: "Current offer",
     summary:
-      "GPT models are currently 30% cheaper. Claude models are experiencing issues; according to the operator, current usage may be compensated later.",
+      "GPT models are 30% cheaper and all models have returned to normal. The operator encourages normal use, which may occasionally bring credit top-ups or access to a Core group advertised with a 0.8 rate; eligibility and the reward mechanism are unconfirmed.",
     details:
-      "New accounts receive $175 in credit and daily check-ins add $25. Fast and stable. Requires a GitHub account created before December 2025, or a Linux Do account.",
+      "New accounts receive $175 in credit and daily check-ins add $25. Fast and stable. Requires a GitHub account created before December 2025, or a Linux Do account. Normal use may bring consumed-credit top-ups or access to the Core group advertised with a 0.8 rate, but the exact rules are unconfirmed.",
     registration: "GitHub account created before December 2025, or a Linux Do account.",
     signupBonus: "$175 credit",
     dailyCheckin: "$25",
-    experience: "GPT 30% discount; Claude currently affected",
+    experience: "GPT 30% discount; models restored and currently stable",
     caveat:
-      "Compensation is based on the operator's statement; follow later announcements for details. Sign out and back in for check-in credit to take effect.",
-    benefits: ["GPT 30% discount", "Claude compensation planned", "$175 sign-up credit", "$25 daily check-in", "Older account required"],
+      "Normal use may qualify for consumed-credit top-ups or access to a Core group advertised with a 0.8 rate, but the mechanism is unconfirmed. Sign out and back in for check-in credit to take effect.",
+    benefits: ["GPT 30% discount", "Models restored", "Possible usage rewards", "Core 0.8-rate mechanism unconfirmed", "$175 sign-up credit", "$25 daily check-in", "Older account required"],
   },
   AnyRouter: {
     kind: "High bonus and stable",
@@ -393,16 +393,16 @@ const entryTranslations = {
   SeekAI: {
     kind: "Use with caution",
     summary:
-      "Generous credits: $200 on registration and $20 from daily check-ins. Model coverage is broad, but it may use a web-proxy backend and tool calls can fail.",
+      "Generous credits: $200 on registration and $20 from daily check-ins. DeepSeek is currently the only available model; the service may use a web-proxy backend and tool calls can fail.",
     details:
-      "Chinese models, GPT, and Claude are available, but reliability and output quality fluctuate and may be degraded. Better suited to basic chat or backup use.",
+      "Only DeepSeek is currently available. Reliability and output quality fluctuate and may be degraded. Better suited to basic chat or backup use.",
     registration: "Register with a GitHub account; new accounts are accepted.",
     signupBonus: "$200 credit",
     dailyCheckin: "$20",
-    models: "Chinese models / GPT / Claude",
-    experience: "Possible web proxy; tool-calling issues",
-    caveat: "Tool calls may fail, and stability and output quality can fluctuate. Use as a backup only.",
-    benefits: ["$200 sign-up credit", "$20 daily check-in", "Broad model coverage", "Possible web proxy", "Tool-calling issues"],
+    models: "DeepSeek only",
+    experience: "DeepSeek only; possible web proxy and tool-calling issues",
+    caveat: "DeepSeek is currently the only available model. Tool calls may fail, and stability and output quality can fluctuate. Use as a backup only.",
+    benefits: ["$200 sign-up credit", "$20 daily check-in", "DeepSeek only", "Possible web proxy", "Tool-calling issues"],
   },
   "一梦五千年": {
     kind: "Registration paused",
