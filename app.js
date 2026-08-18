@@ -10,6 +10,22 @@ const siteConfig = {
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
     {
+      publishedAt: "2026-08-18 17:13",
+      kind: "半公益 / 公益池",
+      name: "Sulmate 半公益站",
+      summary: "公益池全站共享 1x，标称每日共享 1,000 刀；每天签到通常送 10，2026 年 8 月 18 日今日页面显示 800+，但属于免费额度。",
+      details:
+        "站点分为公益组和 VIP 组：公益组使用全站共享额度，VIP 组支持付费调用。充值升级 VIP 后，可在调用时选择分组；公益池用尽后，切换到 VIP 分组即可继续调用并消耗钱包余额。",
+      registration: "通过邀请链接注册；先使用公益组共享额度，需要付费调用时再充值升级 VIP。",
+      signupBonus: "公益池共享 1,000 刀/日",
+      dailyCheckin: "通常 10；今日显示 800+（免费额度）",
+      experience: "公益组 1x；VIP 组 0.15x",
+      caveat: "今日 800+ 是页面显示的免费额度，不代表固定签到值；公益池、签到奖励、VIP 价格和分组规则可能调整，请以站内实际说明为准。",
+      benefits: ["公益组全站共享", "每日共享 1,000 刀", "签到通常送 10", "VIP 付费调用", "VIP 倍率 0.15x", "公益倍率 1x"],
+      url: "https://free.sulmate.cn/sign-up?aff=E4io",
+      tone: "notice",
+    },
+    {
       publishedAt: "2026-08-18 16:00",
       kind: "公益生图 / 限时福利",
       name: "PAI 生图公益站",
@@ -316,6 +332,20 @@ const pageCopy = {
 };
 
 const entryTranslations = {
+  "Sulmate 半公益站": {
+    kind: "Freemium / shared public pool",
+    name: "Sulmate Freemium Service",
+    summary:
+      "The public pool is shared site-wide at a 1x rate and is advertised as 1,000 dollars of shared quota per day. Daily check-ins usually grant 10, while the page showed 800+ on August 18, 2026; that amount is free quota, not a fixed check-in reward.",
+    details:
+      "The service has a public pool and a paid VIP group. The public group draws from shared quota. After topping up and upgrading to VIP, choose the group when making a call; when the public pool is exhausted, switch to VIP to continue using wallet balance.",
+    registration: "Register through the referral link. Start with the shared public group and top up only when paid VIP calls are needed.",
+    signupBonus: "1,000 dollars/day shared public pool",
+    dailyCheckin: "Usually 10; page showed 800+ today (free quota)",
+    experience: "Public group 1x; VIP group 0.15x",
+    caveat: "The 800+ figure is today's displayed free quota, not a fixed check-in amount. Shared quota, check-in rewards, VIP pricing, and group rules may change; verify the current notices.",
+    benefits: ["Shared public group", "1,000 dollars/day shared quota", "Usually 10 check-in", "Paid VIP calls", "VIP 0.15x rate", "Public 1x rate"],
+  },
   "PAI 生图公益站": {
     kind: "Public image generation / limited bonus",
     name: "PAI Public Image Generator",
