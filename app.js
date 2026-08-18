@@ -5,10 +5,27 @@ const siteConfig = {
   title: "公益中转分享",
   intro: "好用的站点、注册方式和最新福利，一页看完，点击直达。我会尽量更新最新情况，欢迎多多关注。",
   githubUrl: "https://github.com/ytzzjx",
-  lastUpdated: "2026-08-17",
+  lastUpdated: "2026-08-18",
   disclaimer:
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
+    {
+      publishedAt: "2026-08-18 16:00",
+      kind: "公益生图 / 限时福利",
+      name: "PAI 生图公益站",
+      summary: "近乎免费的公益生图站；登录赠送 2,000 积分，2026 年 8 月 18 日注册送 888 限时积分，今日签到实测获得 620 积分。",
+      details:
+        "提供 GPT Image 系列生图模型，按图片规格扣除积分：gpt-image-2-1k 为 100 积分、gpt-image-2-2k 为 150 积分、gpt-image-2-4k 为 200 积分。签到奖励较多，适合需要批量体验 AI 生图的用户。",
+      registration: "通过邀请链接注册并登录；2026 年 8 月 18 日注册另送 888 限时积分。",
+      signupBonus: "登录送 2,000；今日注册另送 888",
+      dailyCheckin: "620（2026-08-18 实测）",
+      models: "gpt-image-2-1k / gpt-image-2-2k / gpt-image-2-4k",
+      experience: "积分给得多，单次生图成本较低",
+      caveat: "注册送 888 为当日限时积分；签到数额、模型定价和活动规则可能随时调整，请以站内实际显示为准。",
+      benefits: ["登录送 2,000", "今日注册另送 888", "签到实测 620", "1K 图 100 积分", "2K 图 150 积分", "4K 图 200 积分"],
+      url: "https://pai.zaiduyu.top/#/auth?ref=EA5364BCCDE4",
+      tone: "active",
+    },
     {
       publishedAt: "2026-08-16 22:41",
       kind: "国内入口",
@@ -299,6 +316,21 @@ const pageCopy = {
 };
 
 const entryTranslations = {
+  "PAI 生图公益站": {
+    kind: "Public image generation / limited bonus",
+    name: "PAI Public Image Generator",
+    summary:
+      "A nearly free public image-generation service. Signing in grants 2,000 points, registrations on August 18, 2026 receive another 888 limited-time points, and today's tested check-in yielded 620 points.",
+    details:
+      "Offers GPT Image models with point-based pricing: gpt-image-2-1k costs 100 points, gpt-image-2-2k costs 150 points, and gpt-image-2-4k costs 200 points. The generous point rewards make it useful for trying image generation at volume.",
+    registration: "Register through the referral link and sign in. Registrations on August 18, 2026 receive an additional 888 limited-time points.",
+    signupBonus: "2,000 on sign-in; 888 extra today",
+    dailyCheckin: "620 (tested Aug 18, 2026)",
+    models: "gpt-image-2-1k / gpt-image-2-2k / gpt-image-2-4k",
+    experience: "Generous point supply and low per-image point cost",
+    caveat: "The extra 888 registration points are a same-day promotion. Check-in amounts, model pricing, and promotional rules may change; verify the current values on the service.",
+    benefits: ["2,000 sign-in points", "888 extra today", "Check-in yielded 620", "1K image: 100 points", "2K image: 150 points", "4K image: 200 points"],
+  },
   "AgentRouter 国内入口": {
     kind: "Mainland China access",
     name: "AgentRouter China access",
