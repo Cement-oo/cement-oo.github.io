@@ -288,6 +288,8 @@ h2 {
 
 .feed-item {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .feed-item + .feed-item {
@@ -312,6 +314,7 @@ h2 {
 }
 
 .feed-card {
+  flex: 1;
   min-height: 288px;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -325,6 +328,44 @@ h2 {
   border-left: 3px solid var(--cyan);
   border-radius: var(--radius);
   text-decoration: none;
+}
+
+.entry-resource-link {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 6px;
+  padding: 8px 10px;
+  color: var(--ink);
+  background: var(--page);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.entry-resource-link span {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.entry-resource-link svg {
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+  color: var(--cyan);
+}
+
+.entry-resource-link:hover,
+.entry-resource-link:focus-visible {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  outline: none;
 }
 
 .feed-card:hover,

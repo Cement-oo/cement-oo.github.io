@@ -5,7 +5,7 @@ const siteConfig = {
   title: "公益中转分享",
   intro: "好用的站点、注册方式和最新福利，一页看完，点击直达。我会尽量更新最新情况，欢迎多多关注。",
   githubUrl: "https://github.com/ytzzjx",
-  lastUpdated: "2026-08-18",
+  lastUpdated: "2026-08-19",
   disclaimer:
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
@@ -43,7 +43,7 @@ const siteConfig = {
       tone: "active",
     },
     {
-      publishedAt: "2026-08-16 22:41",
+      publishedAt: "2026-08-19 13:41",
       kind: "国内入口",
       name: "AgentRouter 国内入口",
       summary: "AgentRouter 国内注册地址；模型已全部恢复正常，注册送 175 刀、每日签到 25 刀。",
@@ -56,6 +56,8 @@ const siteConfig = {
       caveat: "正常使用可能有消耗额度补充或 Core 分组（标注 0.8 折）奖励，但具体机制尚未确认；签到需退出账号后重新登录才会生效。",
       benefits: ["国内注册地址", "模型已恢复正常", "正常使用可能有额外奖励", "Core 分组（0.8 折）机制待确认", "注册送 175 刀", "每日签到 25 刀", "老号门槛"],
       url: "https://ps.air-outer.com/register?aff=i3Xz",
+      tutorialUrl: "https://linux.sb/topic/13130",
+      tutorialLabel: "国内无需代理注册 AgentRouter 教程",
       tone: "active",
     },
     {
@@ -375,6 +377,7 @@ const entryTranslations = {
     caveat:
       "Normal use may qualify for consumed-credit top-ups or access to a Core group advertised with a 0.8 rate, but the mechanism is unconfirmed. Sign out and back in for check-in credit to take effect.",
     benefits: ["Mainland China registration", "Models restored", "Possible usage rewards", "Core 0.8-rate mechanism unconfirmed", "$175 sign-up credit", "$25 daily check-in", "Older account required"],
+    tutorialLabel: "AgentRouter registration guide for mainland China (no proxy required)",
   },
   AgentRouter: {
     kind: "Models restored",
@@ -682,6 +685,12 @@ const renderEntry = (sourceEntry) => {
     ? benefits.map((benefit) => `<li>${escapeHtml(benefit)}</li>`).join("")
     : `<li>${escapeHtml(copy.noBenefits)}</li>`;
   const openLinkLabel = escapeHtml(copy.openLink.replace("{name}", entry.name));
+  const tutorialLink = entry.tutorialUrl
+    ? `<a class="entry-resource-link" href="${escapeHtml(safeHttpUrl(entry.tutorialUrl))}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(entry.tutorialLabel)}" data-umami-event="打开 ${safeAnalyticsName} 教程">
+          <span><i data-lucide="book-open" aria-hidden="true"></i>${escapeHtml(entry.tutorialLabel)}</span>
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>`
+    : "";
 
   return `
     <article class="feed-item" data-tone="${tone}">
@@ -714,6 +723,7 @@ const renderEntry = (sourceEntry) => {
         </div>
         <span class="entry-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
       </a>
+      ${tutorialLink}
     </article>
   `;
 };
