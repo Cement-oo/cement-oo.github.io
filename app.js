@@ -10,6 +10,23 @@ const siteConfig = {
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
     {
+      publishedAt: "2026-08-20 18:05",
+      kind: "当前开放",
+      name: "TabiToken",
+      summary: "目前已开放注册，邀请注册额度为 120 刀，每日签到 5-10 刀；注册窗口可能随时关闭，建议尽快尝试。",
+      details:
+        "主打 Claude Opus 4.8 和 Opus 5，速度快、连接稳定。签到入口：点击右上角个人头像，进入个人资料后签到。",
+      registration: "当前开放注册，窗口可能随时关闭，建议尽快尝试。",
+      signupBonus: "120 刀",
+      dailyCheckin: "5-10 刀",
+      models: "Claude Opus 4.8 / Opus 5",
+      experience: "速度快、稳定",
+      caveat: "注册窗口可能随时关闭；已注册用户请尽快调用，否则有封号风险。",
+      benefits: ["当前开放", "注册送 120 刀", "每日签到 5-10 刀", "个人资料内签到", "已注册请尽快调用"],
+      url: "https://tabitoken.com/sign-up?aff=AQDR",
+      tone: "active",
+    },
+    {
       publishedAt: "2026-08-20 10:15",
       kind: "新公益 / 当前可尝试",
       name: "JustWoker 公益站",
@@ -159,23 +176,6 @@ const siteConfig = {
       benefits: ["联系群主送 200", "每日随机签到", "8 月 14 日签到 15", "8 月 15 日签到 15"],
       url: "https://gy.leyanshi.me/sign-up?aff=lorI",
       tone: "notice",
-    },
-    {
-      publishedAt: "2026-08-20 14:00",
-      kind: "随缘注册",
-      name: "TabiToken",
-      summary: "注册窗口不固定，开放时间摸不准，有空可以自行试试；邀请注册额度为 120 刀，每日签到 5-10 刀。",
-      details:
-        "主打 Claude Opus 4.8 和 Opus 5，速度快、连接稳定。注册状态可能随时变化；签到入口：点击右上角个人头像，进入个人资料后签到。",
-      registration: "注册窗口不固定，建议有空时自行尝试。",
-      signupBonus: "120 刀",
-      dailyCheckin: "5-10 刀",
-      models: "Claude Opus 4.8 / Opus 5",
-      experience: "速度快、稳定",
-      caveat: "开放时间不固定，页面状态可能与实际注册窗口存在延迟；已注册用户请尽快调用，否则有封号风险。",
-      benefits: ["随缘注册", "注册送 120 刀", "每日签到 5-10 刀", "个人资料内签到", "已注册请尽快调用"],
-      url: "https://tabitoken.com/sign-up?aff=AQDR",
-      tone: "limited",
     },
     {
       publishedAt: "2026-08-13 22:12",
@@ -469,18 +469,18 @@ const entryTranslations = {
     benefits: ["200 credits via group admin", "Random daily check-in", "Aug 14 check-in: 15", "Aug 15 check-in: 15"],
   },
   TabiToken: {
-    kind: "Intermittent registration",
+    kind: "Registration open",
     summary:
-      "Registration windows are irregular and hard to predict, so try the link whenever convenient. Referral registration grants $120, with $5-10 from daily check-ins.",
+      "Registration is currently open. Referral registration grants $120, with $5-10 from daily check-ins. The window may close at any time, so try it soon.",
     details:
-      "Focused on Claude Opus 4.8 and Opus 5, with fast and stable connections. Registration status may change at any time. To check in, open the profile photo in the top-right and go to Profile.",
-    registration: "Registration opens intermittently; try the link whenever convenient.",
+      "Focused on Claude Opus 4.8 and Opus 5, with fast and stable connections. To check in, open the profile photo in the top-right and go to Profile.",
+    registration: "Registration is currently open and may close at any time; try it soon.",
     signupBonus: "$120 credit",
     dailyCheckin: "$5-10",
     models: "Claude Opus 4.8 / Opus 5",
     experience: "Fast and stable",
-    caveat: "Opening times are irregular and this page may lag behind the actual registration window. Make an API request soon after registration or the account may be suspended.",
-    benefits: ["Intermittent registration", "$120 sign-up credit", "$5-10 daily check-in", "Check in from Profile", "Use soon after registration"],
+    caveat: "The registration window may close at any time. Make an API request soon after registration or the account may be suspended.",
+    benefits: ["Registration open", "$120 sign-up credit", "$5-10 daily check-in", "Check in from Profile", "Use soon after registration"],
   },
   GoRouter: {
     kind: "Registration open",
