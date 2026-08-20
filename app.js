@@ -5,7 +5,7 @@ const siteConfig = {
   title: "公益中转分享",
   intro: "好用的站点、注册方式和最新福利，一页看完，点击直达。我会尽量更新最新情况，欢迎多多关注。",
   githubUrl: "https://github.com/ytzzjx",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   disclaimer:
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
@@ -24,6 +24,22 @@ const siteConfig = {
       caveat: "注册窗口可能随时关闭；已注册用户请尽快调用，否则有封号风险。",
       benefits: ["当前开放", "注册送 120 刀", "每日签到 5-10 刀", "个人资料内签到", "已注册请尽快调用"],
       url: "https://tabitoken.com/sign-up?aff=AQDR",
+      tone: "active",
+    },
+    {
+      publishedAt: "2026-08-20 10:15",
+      kind: "新公益 / 当前可尝试",
+      name: "JustWoker 公益站",
+      summary: "新公益站，注册赠送 90 刀，支持 Claude；需要注册满 1 年的 GitHub 账号。",
+      details:
+        "目前已知福利为注册赠送 90 刀，可使用 Claude 系列模型。注册需要 GitHub 账号，且账号注册时间需满 1 年。",
+      registration: "使用注册满 1 年的 GitHub 账号注册。",
+      signupBonus: "90 刀",
+      models: "Claude",
+      experience: "新公益站，当前信息待持续观察",
+      caveat: "GitHub 账号注册年限是当前已知门槛；模型范围、签到、倍率和稳定性暂未确认，请以站内实际规则为准。",
+      benefits: ["新公益站", "注册送 90 刀", "Claude", "GitHub 账号满 1 年"],
+      url: "https://api.justwoker.icu/sign-up?aff=T5tm",
       tone: "active",
     },
     {
@@ -334,6 +350,20 @@ const pageCopy = {
 };
 
 const entryTranslations = {
+  "JustWoker 公益站": {
+    kind: "New public service / currently tryable",
+    name: "JustWoker Public Service",
+    summary:
+      "A new public service. New registrations receive $90 and Claude is available. Registration requires a GitHub account that is at least one year old.",
+    details:
+      "The currently reported offer is $90 in sign-up credit with access to Claude models. A GitHub account created at least one year ago is required.",
+    registration: "Register with a GitHub account that is at least one year old.",
+    signupBonus: "$90 credit",
+    models: "Claude",
+    experience: "New public service; status is still being observed",
+    caveat: "The GitHub account age requirement is the currently known gate. Model coverage, check-ins, rates, and stability are unconfirmed; verify the current service rules.",
+    benefits: ["New public service", "$90 sign-up credit", "Claude", "GitHub account at least one year old"],
+  },
   "Sulmate 半公益站": {
     kind: "Freemium / shared public pool",
     name: "Sulmate Freemium Service",
