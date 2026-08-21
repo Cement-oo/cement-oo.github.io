@@ -5,7 +5,7 @@ const siteConfig = {
   title: "公益中转分享",
   intro: "好用的站点、注册方式和最新福利，一页看完，点击直达。我会尽量更新最新情况，欢迎多多关注。",
   githubUrl: "https://github.com/ytzzjx",
-  lastUpdated: "2026-08-20",
+  lastUpdated: "2026-08-21",
   disclaimer:
     "以上额度、签到与模型信息仅供参考，各站活动和规则随时可能调整，请以站点内公告和实际使用情况为准，可能存在偏差。",
   entries: [
@@ -92,6 +92,23 @@ const siteConfig = {
       benefits: ["登录送 2,000", "今日注册另送 888", "签到实测 620", "1K 图 100 积分", "2K 图 150 积分", "4K 图 200 积分"],
       url: "https://pai.zaiduyu.top/#/auth?ref=EA5364BCCDE4",
       tone: "active",
+    },
+    {
+      publishedAt: "2026-08-21 16:15",
+      kind: "免费生图 / 轻量对话",
+      name: "Jasperio",
+      summary: "免费生图站，目前可无限量使用 image2 生成图片，也可无限量使用 GPT-5.5-mini 聊天。",
+      details:
+        "生成的图片会不定时删除，需要保留的内容请尽快下载。免费资源请按需使用，避免滥用影响站点的持续开放。",
+      registration: "直接打开站点体验；未提供额外注册门槛信息。",
+      signupBonus: "免费无限量使用",
+      dailyCheckin: "无需签到",
+      models: "image2 / GPT-5.5-mini",
+      experience: "免费生图与轻量聊天，图片需及时保存",
+      caveat: "生成图片会不定时删除，请尽快下载；当前免费能力可能调整，请勿滥用。",
+      benefits: ["image2 无限量生图", "GPT-5.5-mini 无限量聊天", "无需签到", "图片请尽快下载", "请勿滥用"],
+      url: "https://jasperio.xyz:8848/",
+      tone: "notice",
     },
     {
       publishedAt: "2026-08-19 13:41",
@@ -394,6 +411,20 @@ const entryTranslations = {
     experience: "Generous point supply and low per-image point cost",
     caveat: "The extra 888 registration points are a same-day promotion. Check-in amounts, model pricing, and promotional rules may change; verify the current values on the service.",
     benefits: ["2,000 sign-in points", "888 extra today", "Check-in yielded 620", "1K image: 100 points", "2K image: 150 points", "4K image: 200 points"],
+  },
+  Jasperio: {
+    kind: "Free image generation / light chat",
+    summary:
+      "A free image-generation service that currently offers unlimited image2 image generation and unlimited GPT-5.5-mini chat.",
+    details:
+      "Generated images may be deleted without notice, so download anything you want to keep promptly. Please use the free resources responsibly to help keep the service available.",
+    registration: "Open the service directly; no additional registration requirement has been provided.",
+    signupBonus: "Free unlimited use",
+    dailyCheckin: "Not required",
+    models: "image2 / GPT-5.5-mini",
+    experience: "Free image generation and light chat; save images promptly",
+    caveat: "Generated images may be deleted without notice. Download them promptly, and do not abuse the current free access because it may change.",
+    benefits: ["Unlimited image2 generation", "Unlimited GPT-5.5-mini chat", "No check-in required", "Download images promptly", "Please use responsibly"],
   },
   "AgentRouter 国内入口": {
     kind: "Mainland China access",
